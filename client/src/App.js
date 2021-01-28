@@ -9,6 +9,8 @@ import {
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [isAuthentication, setIsAuthentication] = useState(false);
@@ -31,6 +33,7 @@ function App() {
 
   return (
     <Fragment>
+      <ToastContainer />
       <Router>
         <div className="container">
           <Switch>
